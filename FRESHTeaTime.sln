@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRESHTeaTime", "FRESHTeaTime\FRESHTeaTime.csproj", "{B31056EE-BAAC-48F7-8766-1265CCEE73A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B31056EE-BAAC-48F7-8766-1265CCEE73A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31056EE-BAAC-48F7-8766-1265CCEE73A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31056EE-BAAC-48F7-8766-1265CCEE73A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31056EE-BAAC-48F7-8766-1265CCEE73A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ABE52C5-B0D4-4DC1-B95D-0F0D7F2540F8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:FRESHTeaTime.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="600" Height="400"
+        x:Class="FRESHTeaTime.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="FRESHTeaTime">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<StackPanel>
+		<TabControl>
+			<TabItem Header="Timers">
+				<StackPanel>
+					<ListBox Items="{Binding Timers}" VerticalAlignment="Stretch" MinHeight="200">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<StackPanel Orientation="Vertical">
+									<TextBlock FontWeight="Bold" Text="{Binding Name}"/>
+									<TextBlock Text="{Binding TimeString}"/>
+								</StackPanel>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+					<Button Command="{Binding AddTimerCommand}" Content="Add Timer"/>
+					<Button Command="{Binding CloseCommand}" Content="Close"/>
+				</StackPanel>
+
+			</TabItem>
+			<TabItem Header="Alarms">
+
+			</TabItem>
+			<TabItem Header="Clocks"/>
+			<TabItem Header="Stopwatch"/>
+		</TabControl>
+		<TextBlock IsVisible="{Binding AreNotificationsAvailable}" Foreground="Red" Text="Notifications won't show on this platform :("/>
+	</StackPanel>
+</Window>
